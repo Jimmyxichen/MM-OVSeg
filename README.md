@@ -38,7 +38,7 @@ pip install -r requirements.txt
 
 # Optional: install the latest version of PyTorch to use the DINO v3 model as backbone. In my case, the versions are PyTorch 2.5.0, Python 3.10, CUDA 12.6, and cuDNN 9.3.0, respectively.
 
-# The dependent versions are not strict, and in general you only need to pay attention to detectron2.
+# The dependent versions are not strict, and in general you only need to pay attention to pytorch and detectron2.
 ```
 
 ## Datasets
@@ -51,7 +51,7 @@ We include the following multimodal RS dataset configurations under diverse weat
 We provide aboved processed datasets for your convenience. Download them from [here](https://huggingface.co/YiminJimmy/MM-OVSeg/tree/main).
 
 ## 🤝Acknowledgments
-The authors would also like to give special thanks to [GSNet](https://github.com/yecy749/gsnet) and [SegEarth-OV](https://github.com/likyoo/SegEarth-OV).
+The authors would also like to give special thanks to [GSNet](https://github.com/yecy749/gsnet), [DINOv3](https://github.com/facebookresearch/dinov3) and [SegEarth-OV](https://github.com/likyoo/SegEarth-OV).
 
 ## 🙋Q & A
 ***For any questions, please feel free to leave it in the [issue section](https://github.com/Jimmyxichen/MM-OVSeg/issues) or [contact us.](2364356729@qq.com)***
