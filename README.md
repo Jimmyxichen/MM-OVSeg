@@ -36,7 +36,7 @@ conda activate MMOVSeg
 conda install pytorch==2.3.0 torchvision==0.18.0 torchaudio==2.3.0 pytorch-cuda=11.8 -c pytorch -c nvidia
 pip install -r requirements.txt
 
-# Optional. install the latest version of PyTorch to use the DINO v3 model. In my case, the versions are PyTorch 2.5.0, Python 3.10, CUDA 12.6, and cuDNN 9.3.0, respectively.
+# Optional: install the latest version of PyTorch to use the DINO v3 model as backbone. In my case, the versions are PyTorch 2.5.0, Python 3.10, CUDA 12.6, and cuDNN 9.3.0, respectively.
 
 # The dependent versions are not strict, and in general you only need to pay attention to detectron2.
 ```
