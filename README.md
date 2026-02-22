@@ -10,8 +10,7 @@
 </div>
 
 ## 🛎️News
-* **` Notice☀️☀️`**: MM-OVSeg has been accepted by [IEEE TGRS 2026] on February 21, 2026!! Related data and benchmark suites will be released soon!
-
+* **` Notice☀️☀️`**: MM-OVSeg has been accepted by CVPR 2026 conference on February 21, 2026!! Related data and benchmark suites will be released soon!
 
 
 ## 🤝Acknowledgments
