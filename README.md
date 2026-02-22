@@ -15,6 +15,9 @@
 ## 🛎️News
 * **` Notice☀️☀️`**: MM-OVSeg has been accepted by the CVPR 2026 conference on February 21, 2026!! Related data and benchmark suites will be released soon!
 
+## Abstract
+> *Open-vocabulary segmentation enables pixel-level recognition from an open set of textual categories, allowing generalization beyond fixed classes. Despite great potential in remote sensing, progress in this area remains largely limited to clear-sky optical data and struggles under cloudy or haze-contaminated conditions. We present MM-OVSeg, a multimodal Optical–SAR fusion framework for resilient open-vocabulary segmentation under adverse weather conditions. MM-OVSeg leverages the complementary strengths of the two modalities—optical imagery provides rich spectral semantics, while synthetic aperture radar (SAR) offers cloud-penetrating structural cues. To address the cross-modal domain gap and the limited dense prediction capability of current vision–language models, we propose two key designs: a cross-modal unification process for multi-sensor representation alignment, and a dual-encoder fusion module that integrates hierarchical features from multiple vision foundation models for text-aligned multimodal segmentation. Extensive experiments demonstrate that MM-OVSeg achieves superior robustness and generalization across diverse cloud conditions.*
+
 
 ## 🤝Acknowledgments
 The authors would also like to give special thanks to [GSNet](https://github.com/yecy749/gsnet) and [SegEarth-OV](https://github.com/likyoo/SegEarth-OV).
