@@ -18,6 +18,23 @@
 ## Abstract
 > *Open-vocabulary segmentation enables pixel-level recognition from an open set of textual categories, allowing generalization beyond fixed classes. Despite great potential in remote sensing, progress in this area remains largely limited to clear-sky optical data and struggles under cloudy or haze-contaminated conditions. We present MM-OVSeg, a multimodal Optical–SAR fusion framework for resilient open-vocabulary segmentation under adverse weather conditions. MM-OVSeg leverages the complementary strengths of the two modalities—optical imagery provides rich spectral semantics, while synthetic aperture radar (SAR) offers cloud-penetrating structural cues. To address the cross-modal domain gap and the limited dense prediction capability of current vision–language models, we propose two key designs: a cross-modal unification process for multi-sensor representation alignment, and a dual-encoder fusion module that integrates hierarchical features from multiple vision foundation models for text-aligned multimodal segmentation. Extensive experiments demonstrate that MM-OVSeg achieves superior robustness and generalization across diverse cloud conditions.*
 
+## Dependencies and Installation
+
+
+```
+# 1. git clone this repository
+git clone https://github.com/Jimmyxichen/MM-OVSeg.git
+cd MM-OVSeg
+
+# 2. create new anaconda env
+conda create -n MMOVSeg python=3.8
+conda activate MMOVSeg
+
+# 3. install torch and dependencies
+conda install pytorch==2.3.0 torchvision==0.18.0 torchaudio==2.3.0 pytorch-cuda=11.8 -c pytorch -c nvidia
+pip install -r requirements.txt
+# The dependent versions are not strict, and in general you only need to pay attention to detectron2.
+```
 
 ## 🤝Acknowledgments
 The authors would also like to give special thanks to [GSNet](https://github.com/yecy749/gsnet) and [SegEarth-OV](https://github.com/likyoo/SegEarth-OV).
