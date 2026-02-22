@@ -18,7 +18,7 @@
 * **` Notice☀️☀️`**: MM-OVSeg has been accepted by the CVPR 2026 conference on February 21, 2026!! Related data and benchmark suites will be released soon!
 
 ## :fire:TODO
-- [x] Create an initial Github project (Feb 22, 2026)
+- [x] Release Datasets for CVPR version (Feb 22, 2026)
 - [ ] Release Train/Evaluation code for CVPR version 
 - [ ] Release pre-trained weights for CVPR version 
 
