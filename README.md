@@ -36,6 +36,14 @@ pip install -r requirements.txt
 # The dependent versions are not strict, and in general you only need to pay attention to detectron2.
 ```
 
+## Datasets
+We include the following multimodal RS dataset configurations under diverse weather and domain conditions in this repo:
+1) `clear-sky weather`: PIE-RGB-SAR-clean
+2) `real cloudy weather`: PIE-RGB-SAR-cloud
+3) `synthetic cloud cover with varying opacity (thin vs. thick)`: DDHR-SK (Pohang, South Korea, thick cloud), OpenEarthMap-SAR (OEM-thin & OEM-thick)
+4) `cross-domain generalization`: DDHR-CH (Xi’an, China, thick cloud)
+   
+
 ## 🤝Acknowledgments
 The authors would also like to give special thanks to [GSNet](https://github.com/yecy749/gsnet) and [SegEarth-OV](https://github.com/likyoo/SegEarth-OV).
 
