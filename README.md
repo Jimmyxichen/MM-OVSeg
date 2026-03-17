@@ -49,8 +49,8 @@ pip install -r requirements.txt
 ## Datasets
 We include the following multimodal RS dataset configurations under diverse weather and domain conditions in this repo:
 1) `clear-sky weather`: PIE-RGB-SAR-clean
-2) `synthetic cloud cover with varying opacity (thin vs. thick vs. varied)`: PIE-RGB-SAR-cloud, DDHR-SK (Pohang, South Korea, thick cloud), OpenEarthMap-SAR (OEM-thin & OEM-thick)
-3) `cross-domain generalization`: DDHR-CH (Xi’an, China, thick cloud)
+2) `synthetic cloud cover with varying opacity (thin vs. thick vs. varied)`: PIE-RGB-SAR-cloud (varied cloud), DDHR-SK (varied cloud), OpenEarthMap-SAR (OEM-thin & OEM-thick)
+3) `cross-domain generalization`: DDHR-CH (varied cloud)
 
 We provide aboved processed datasets for your convenience. Download them from [here](https://huggingface.co/YiminJimmy/MM-OVSeg/tree/main).
 
