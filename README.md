@@ -9,7 +9,7 @@
 
 <sup>*</sup> Equal contribution, <sup>†</sup> Corresponding author
 
-[![HuggingFace Dataset](https://img.shields.io/badge/HuggingFace-Dataset-yellow)](https://huggingface.co/YiminJimmy/MM-OVSeg)
+[![arXiv paper](https://img.shields.io/badge/arXiv-paper-b31b1b.svg)](https://arxiv.org/abs/2603.17528)   [![HuggingFace Dataset](https://img.shields.io/badge/HuggingFace-Dataset-yellow)](https://huggingface.co/YiminJimmy/MM-OVSeg)
 
 
 </div>
