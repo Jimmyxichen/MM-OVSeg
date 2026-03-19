@@ -15,6 +15,7 @@
 </div>
 
 ## 🛎️News
+* **` Mar 20th, 2026`**: The [arXiv paper](https://arxiv.org/abs/2603.17528) of MM-OVSeg is now online. If you are interested in details of MM-OVSeg, do not hesitate to take a look!!
 * **` Notice☀️☀️`**: MM-OVSeg has been accepted by the CVPR 2026 conference on February 21, 2026!! Related data and benchmark suites will be released soon!
 
 ## :fire:TODO
