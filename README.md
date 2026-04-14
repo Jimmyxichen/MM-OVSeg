@@ -22,6 +22,7 @@
 - [x] Release Datasets for CVPR version (Feb 22, 2026)
 - [ ] Release Train/Evaluation code for CVPR version (Expected time: early May)
 - [ ] Release pre-trained weights for CVPR version (Expected time: early May)
+
 Note: Authors are occupied by other submissions now, the code and weights will be released before May 15th. Thank you for your understanding!
 
 ## Abstract
