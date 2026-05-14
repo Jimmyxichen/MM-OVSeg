@@ -146,6 +146,18 @@ python /yourpath/MM-OVSeg/train_net.py --eval-only --config /yourpath/MM-OVSeg/c
 #####################################################################
 ```
 
+## 📜Reference
+
+If this dataset or code contributes to your research, please kindly consider citing our paper and give this repo ⭐️:
+```
+@article{wei2026mm,
+  title={{MM-OVS}eg: {M}ultimodal {O}ptical-{SAR} {F}usion for {O}pen-{V}ocabulary {S}egmentation in {R}emote {S}ensing},
+  author={Wei, Yimin and Xiao, Aoran and Chen, Hongruixuan and Xia, Junshi and Yokoya, Naoto},
+  journal={arXiv preprint arXiv:2603.17528},
+  year={2026}
+}
+```
+
 ## 🤝Acknowledgments
 The authors would also like to give special thanks to [GSNet](https://github.com/yecy749/gsnet), [DINOv3](https://github.com/facebookresearch/dinov3) and [SegEarth-OV](https://github.com/likyoo/SegEarth-OV).
 
