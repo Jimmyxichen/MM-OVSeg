@@ -57,6 +57,7 @@ We include the following multimodal RS dataset configurations under diverse weat
 
 We provide aboved processed datasets for your convenience. Download them from [here](https://huggingface.co/YiminJimmy/MM-OVSeg/tree/main).
 
+## Training and Evaluation
 We provide following commands for model training and evaluation:
 
 ### Training commands
