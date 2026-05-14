@@ -82,6 +82,12 @@ If the user wants to use DINOv3 (ViT-L/14), please use: from .MMOVL14 import MMO
 
 If the user wants to use DINOv1 (ViT-B/16), please use: from .MMOV import MMOV; and comment out or disable the following line: from .MMOVL14 import MMOV.
 
+```bash
+#### mmov_seg/__init__.py file ####
+#from .MMOV import MMOV   ### If you want to use DINO v1 (ViT-B/16)
+from .MMOVL14 import MMOV   ### If you want to use DINO v3 (ViT-L/14)
+```
+
 ### Training commands
 We provide following commands for model training:
 
