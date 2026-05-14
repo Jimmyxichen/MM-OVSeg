@@ -88,6 +88,13 @@ If the user wants to use DINOv1 (ViT-B/16), please use: from .MMOV import MMOV; 
 from .MMOVL14 import MMOV   ### If you want to use DINO v3 (ViT-L/14)
 ```
 
+### Path replacement
+Please replace the paths in the following files with your own project paths:
+1. mmov_seg/data/datasets/register_PIE_train.py; mmov_seg/data/datasets/register_DFC25thick_train.py; mmov_seg/data/datasets/register_DFC25thin_train.py; mmov_seg/data/datasets/register_DDSK_train.py;
+2. mmov_seg/data/datasets/register_PIE_val.py; mmov_seg/data/datasets/register_DDSK_val.py; mmov_seg/data/datasets/register_DDCH_val.py; mmov_seg/data/datasets/register_DFC25thick_val.py; mmov_seg/data/datasets/register_DFC25thin_val.py;
+3. mmov_seg/MMOV.py and mmov_seg/MMOVL14.py
+
+
 ### Training commands
 We provide following commands for model training:
 
