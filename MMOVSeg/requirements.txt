@@ -1,0 +1,12 @@
+open-clip-torch
+scipy
+ftfy
+opencv-python
+setuptools
+pillow
+imageio
+timm
+regex
+einops
+git+https://github.com/facebookresearch/detectron2.git
+#git+git+https://githubfast.com/facebookresearch/detectron2.git
