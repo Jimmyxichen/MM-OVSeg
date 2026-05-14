@@ -23,7 +23,6 @@
 - [x] Release Train/Evaluation code for CVPR version (May 14, 2026)
 - [x] Release pre-trained weights for CVPR version (May 14, 2026)
 
-Note: Authors are occupied by other submissions now, the code and weights will be released before May 15th. Thank you for your understanding!
 
 ## Abstract
 > *Open-vocabulary segmentation enables pixel-level recognition from an open set of textual categories, allowing generalization beyond fixed classes. Despite great potential in remote sensing, progress in this area remains largely limited to clear-sky optical data and struggles under cloudy or haze-contaminated conditions. We present MM-OVSeg, a multimodal Optical–SAR fusion framework for resilient open-vocabulary segmentation under adverse weather conditions. MM-OVSeg leverages the complementary strengths of the two modalities—optical imagery provides rich spectral semantics, while synthetic aperture radar (SAR) offers cloud-penetrating structural cues. To address the cross-modal domain gap and the limited dense prediction capability of current vision–language models, we propose two key designs: a cross-modal unification process for multi-sensor representation alignment, and a dual-encoder fusion module that integrates hierarchical features from multiple vision foundation models for text-aligned multimodal segmentation. Extensive experiments demonstrate that MM-OVSeg achieves superior robustness and generalization across diverse cloud conditions.*
@@ -176,6 +175,28 @@ python /yourpath/MM-OVSeg/train_net.py --eval-only --config /yourpath/MM-OVSeg/c
 python /yourpath/MM-OVSeg/train_net.py --eval-only --config /yourpath/MM-OVSeg/configs/vitl_336.yaml --num-gpus 1 --dist-url "auto" MODEL.SEM_SEG_HEAD.NUM_CLASSES 5 MODEL.SEM_SEG_HEAD.IGNORE_VALUE 255 TEST.EVAL_PERIOD 0 OUTPUT_DIR /yourpath/MM-OVSeg/eval/ MODEL.SEM_SEG_HEAD.TRAIN_CLASS_JSON "/yourpath/MM-OVSeg/datasets/DDSK3class.json" MODEL.SEM_SEG_HEAD.TEST_CLASS_JSON "/yourpath/MM-OVSeg/datasets/DDCH.json" DATASETS.TRAIN \(\"DDSK_train_sem_seg\"\,\) DATASETS.TEST \(\"DDCH_val_sem_seg\"\,\) MODEL.WEIGHTS /yourpath/MM-OVSeg/output/L14/modelDDCH.pth
 #####################################################################
 ```
+
+## Pretrained Models
+We provide pretrained weights for our models. Due to some checkpoint files not being saved in time, we provide checkpoints whose performance is comparable to or even better than the results reported in the paper.All of the models were evaluated with 2 NVIDIA A100 GPUs, and can be reproduced with the evaluation script above.
+
+<table><tbody>
+<!-- START TABLE -->
+<!-- TABLE HEADER -->
+<th valign="bottom">Name</th>
+<th valign="bottom">CLIP</th>
+<th valign="bottom">DINO</th>
+<th valign="bottom">Download</th>
+<!-- TABLE BODY -->
+</tr>
+<!-- ROW: MM-OVSeg (L) -->
+<tr>
+<td align="left">MM-OVSeg (L)</a></td>
+<td align="center">ViT-L/14</td>
+<td align="center">DINO v3</td>
+<td align="center"><a href="https://huggingface.co/YiminJimmy/MM-OVSeg/blob/main/L14.zip">ckpt</a>&nbsp;
+</tr>
+
+</tbody></table>
 
 ## 📜Reference
 
