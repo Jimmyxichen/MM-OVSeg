@@ -177,7 +177,7 @@ python /yourpath/MM-OVSeg/train_net.py --eval-only --config /yourpath/MM-OVSeg/c
 ```
 
 ## Pretrained Models
-We provide pretrained weights for our models. Due to some checkpoint files not being saved in time, we provide checkpoints whose performance is comparable to or even better than the results reported in the paper.All of the models were evaluated with 2 NVIDIA A100 GPUs, and can be reproduced with the evaluation script above.
+We provide pretrained weights for our models. Due to some checkpoint files not being saved in time, we provide checkpoints whose performance is comparable to or even better than the results reported in the paper. All models were evaluated with 2 NVIDIA A100 GPUs, and can be reproduced with the evaluation script above.
 
 <table><tbody>
 <!-- START TABLE -->
