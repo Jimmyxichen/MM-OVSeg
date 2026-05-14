@@ -74,6 +74,13 @@ ${ROOT}   # Root directory, for example: /yourpath/MM-OVSeg/
 ```
 
 ## Training and Evaluation
+
+Note: The key to using DINOv3 or DINOv1 is to modify the configuration in mm.
+
+If the user wants to use DINOv3 (ViT-L/14), please use: from .MMOVL14 import MMOV; and comment out or disable the following line: from .MMOV import MMOV.
+
+If the user wants to use DINOv1 (ViT-B/16), please use: from .MMOV import MMOV; and comment out or disable the following line: from .MMOVL14 import MMOV.
+
 We provide following commands for model training and evaluation:
 
 ### Training commands
