@@ -55,7 +55,23 @@ We include the following multimodal RS dataset configurations under diverse weat
 2) `synthetic cloud cover with varying opacity (thin vs. thick vs. varied)`: PIE-RGB-SAR-cloud (varied cloud), DDHR-SK (varied cloud), OpenEarthMap-SAR (OEM-thin & OEM-thick)
 3) `cross-domain generalization`: DDHR-CH (varied cloud)
 
-We provide aboved processed datasets for your convenience. Download them from [here](https://huggingface.co/YiminJimmy/MM-OVSeg/tree/main).
+We provide aboved processed datasets for your convenience. Please download the datasets and checkpoints from [HuggingFace](https://huggingface.co/YiminJimmy/MM-OVSeg/tree/main), and then make them have the following folder/file structure:
+```
+${ROOT}   # Root directory, for example: /yourpath/MM-OVSeg/
+│
+├── Dataset
+│    ├── OEM   # OEM-thin & OEM-thick datasets
+│    ├── PIE_RGBSAR   # PIE-RGB-SAR-cloud dataset
+│    ├── DDSK  # DDHR-SK dataset
+│    ├── DDCH  # DDHR-CH dataset
+│         ...   
+│   
+└── checkpoint
+     ├── B16_checkpoint.pth # Checkpoint for SAR DINOv1 (ViT-B/16)
+     │
+     └── L14_checkpoint.pth   # Checkpoint for SAR DINOv3 (ViT-L/14)
+         ...
+```
 
 ## Training and Evaluation
 We provide following commands for model training and evaluation:
@@ -79,9 +95,7 @@ python /yourpath/MM-OVSeg/train_net.py --config /yourpath/MM-OVSeg/configs/vitb_
 #### DDSK ####
 python /yourpath/MM-OVSeg/train_net.py --config /yourpath/MM-OVSeg/configs/vitb_384.yaml --num-gpus 1 --dist-url "auto" MODEL.SEM_SEG_HEAD.NUM_CLASSES 3 MODEL.SEM_SEG_HEAD.IGNORE_VALUE 255 TEST.EVAL_PERIOD 0 OUTPUT_DIR /yourpath/MM-OVSeg/output/ MODEL.SEM_SEG_HEAD.TRAIN_CLASS_JSON "/yourpath/MM-OVSeg/datasets/DDSK3class.json" MODEL.SEM_SEG_HEAD.TEST_CLASS_JSON "/yourpath/MM-OVSeg/datasets/DDSK.json" DATASETS.TEST \(\"DDSK_val_sem_seg\"\,\) 
 
-
 #################### ViT-L/14 #########################################
-
 #### PIEclean  ###
 python /yourpath/MM-OVSeg/train_net.py --config /yourpath/MM-OVSeg/configs/vitl_336.yaml --num-gpus 1 --dist-url "auto" MODEL.SEM_SEG_HEAD.NUM_CLASSES 4 MODEL.SEM_SEG_HEAD.IGNORE_VALUE 255 TEST.EVAL_PERIOD 0 OUTPUT_DIR /yourpath/MM-OVSeg/output/ MODEL.SEM_SEG_HEAD.TRAIN_CLASS_JSON "/yourpath/MM-OVSeg/datasets/PIE4class.json" MODEL.SEM_SEG_HEAD.TEST_CLASS_JSON "/yourpath/MM-OVSeg/datasets/PIE.json" DATASETS.TEST \(\"PIE_valrgb_sem_seg\"\,\) 
 
@@ -129,7 +143,6 @@ python /yourpath/MM-OVSeg/train_net.py --eval-only --config /yourpath/MM-OVSeg/c
 #### PIEcloud ####
 python /yourpath/MM-OVSeg/train_net.py --eval-only --config /yourpath/MM-OVSeg/configs/vitl_336.yaml --num-gpus 1 --dist-url "auto" MODEL.SEM_SEG_HEAD.NUM_CLASSES 6 MODEL.SEM_SEG_HEAD.IGNORE_VALUE 255 TEST.EVAL_PERIOD 0 OUTPUT_DIR /yourpath/MM-OVSeg/eval/ MODEL.SEM_SEG_HEAD.TRAIN_CLASS_JSON "/yourpath/MM-OVSeg/datasets/PIE4class.json" MODEL.SEM_SEG_HEAD.TEST_CLASS_JSON "/yourpath/MM-OVSeg/datasets/PIE.json" DATASETS.TRAIN \(\"PIE_train_sem_seg\"\,\) DATASETS.TEST \(\"PIE_val_sem_seg\"\,\) MODEL.WEIGHTS /yourpath/MM-OVSeg/output/L14/modelPIE.pth
 
-
 #### OEMthin ####
 python /yourpath/MM-OVSeg/train_net.py --eval-only --config /yourpath/MM-OVSeg/configs/vitl_336.yaml --num-gpus 1 --dist-url "auto" MODEL.SEM_SEG_HEAD.NUM_CLASSES 8 MODEL.SEM_SEG_HEAD.IGNORE_VALUE 255 TEST.EVAL_PERIOD 0 OUTPUT_DIR /yourpath/MM-OVSeg/eval/ MODEL.SEM_SEG_HEAD.TRAIN_CLASS_JSON "/yourpath/MM-OVSeg/datasets/OEM5class.json" MODEL.SEM_SEG_HEAD.TEST_CLASS_JSON "/yourpath/MM-OVSeg/datasets/OEM.json" DATASETS.TRAIN \(\"OEMthin_train_sem_seg\"\,\) DATASETS.TEST \(\"OEMthin_val_sem_seg\"\,\) MODEL.WEIGHTS /yourpath/MM-OVSeg/output/L14/modelOEMthin.pth
 
@@ -141,7 +154,6 @@ python /yourpath/MM-OVSeg/train_net.py --eval-only --config /yourpath/MM-OVSeg/c
 
 #### DDCH ####
 python /yourpath/MM-OVSeg/train_net.py --eval-only --config /yourpath/MM-OVSeg/configs/vitl_336.yaml --num-gpus 1 --dist-url "auto" MODEL.SEM_SEG_HEAD.NUM_CLASSES 5 MODEL.SEM_SEG_HEAD.IGNORE_VALUE 255 TEST.EVAL_PERIOD 0 OUTPUT_DIR /yourpath/MM-OVSeg/eval/ MODEL.SEM_SEG_HEAD.TRAIN_CLASS_JSON "/yourpath/MM-OVSeg/datasets/DDSK3class.json" MODEL.SEM_SEG_HEAD.TEST_CLASS_JSON "/yourpath/MM-OVSeg/datasets/DDCH.json" DATASETS.TRAIN \(\"DDSK_train_sem_seg\"\,\) DATASETS.TEST \(\"DDCH_val_sem_seg\"\,\) MODEL.WEIGHTS /yourpath/MM-OVSeg/output/L14/modelDDCH.pth
-
 #####################################################################
 ```
 
