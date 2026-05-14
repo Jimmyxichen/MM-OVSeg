@@ -82,9 +82,9 @@ If the user wants to use DINOv3 (ViT-L/14), please use: from .MMOVL14 import MMO
 
 If the user wants to use DINOv1 (ViT-B/16), please use: from .MMOV import MMOV; and comment out or disable the following line: from .MMOVL14 import MMOV.
 
-We provide following commands for model training and evaluation:
-
 ### Training commands
+We provide following commands for model training:
+
 ```bash
 export DETECTRON2_DATASETS=/yourpath/MM-OVSeg/Dataset
 #################### ViT-B/16 #########################################
@@ -123,6 +123,8 @@ python /yourpath/MM-OVSeg/train_net.py --config /yourpath/MM-OVSeg/configs/vitl_
 ```
 
 ### Evaluation commands
+We provide following commands for model evaluation:
+
 ```bash
 export DETECTRON2_DATASETS=/yourpath/MM-OVSeg/Dataset
 #################### ViT-B/16 #########################################
