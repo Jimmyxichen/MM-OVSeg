@@ -74,7 +74,7 @@ ${ROOT}   # Root directory, for example: /yourpath/MM-OVSeg/
 ## Training and Evaluation
 
 ### Backbone switching
-The key to switching between different models (DINOv3 or DINOv1) as the backbone is to modify the configuration in the mmov_seg/__init__.py file:
+Please switch between different backbone models (DINOv3 or DINOv1) by modifying the configuration in mmov_seg/__init__.py.
 
 If the user wants to use DINOv3 (ViT-L/14), please use: from .MMOVL14 import MMOV; and comment out or disable the following line: from .MMOV import MMOV.
 
