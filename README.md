@@ -122,7 +122,6 @@ python /yourpath/MM-OVSeg/train_net.py --eval-only --config /yourpath/MM-OVSeg/c
 #### DDCH ####
 python /yourpath/MM-OVSeg/train_net.py --eval-only --config /yourpath/MM-OVSeg/configs/vitb_384.yaml --num-gpus 1 --dist-url "auto" MODEL.SEM_SEG_HEAD.NUM_CLASSES 5 MODEL.SEM_SEG_HEAD.IGNORE_VALUE 255 TEST.EVAL_PERIOD 0 OUTPUT_DIR /yourpath/MM-OVSeg/eval/ MODEL.SEM_SEG_HEAD.TRAIN_CLASS_JSON "/yourpath/MM-OVSeg/datasets/DDSK3class.json" MODEL.SEM_SEG_HEAD.TEST_CLASS_JSON "/yourpath/MM-OVSeg/datasets/DDCH.json" DATASETS.TRAIN \(\"DDSK_train_sem_seg\"\,\) DATASETS.TEST \(\"DDCH_val_sem_seg\"\,\) MODEL.WEIGHTS /yourpath/MM-OVSeg/output/B16/modelDDCH.pth
 
-
 #################### ViT-L/14 #########################################
 #### PIEclean  ###
 python /yourpath/MM-OVSeg/train_net.py --eval-only --config /yourpath/MM-OVSeg/configs/vitl_336.yaml --num-gpus 1 --dist-url "auto" MODEL.SEM_SEG_HEAD.NUM_CLASSES 6 MODEL.SEM_SEG_HEAD.IGNORE_VALUE 255 TEST.EVAL_PERIOD 0 OUTPUT_DIR /yourpath/MM-OVSeg/eval/ MODEL.SEM_SEG_HEAD.TRAIN_CLASS_JSON "/yourpath/MM-OVSeg/datasets/PIE4class.json" MODEL.SEM_SEG_HEAD.TEST_CLASS_JSON "/yourpath/MM-OVSeg/datasets/PIE.json" DATASETS.TRAIN \(\"PIE_trainrgb_sem_seg\"\,\) DATASETS.TEST \(\"PIE_valrgb_sem_seg\"\,\) MODEL.WEIGHTS /yourpath/MM-OVSeg/output/L14/modelPIEclean.pth
