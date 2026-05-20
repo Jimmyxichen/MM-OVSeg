@@ -177,7 +177,7 @@ python /yourpath/MM-OVSeg/train_net.py --eval-only --config /yourpath/MM-OVSeg/c
 ```
 
 ## Pretrained Models
-We provide pretrained weights for our models. Due to some checkpoint files not being saved in time, we provide checkpoints whose performance is comparable to or even better than the results reported in the paper. More checkpoints will be released later. All models were evaluated with 2 NVIDIA A100 GPUs, and can be reproduced with the evaluation script above.
+We provide pretrained weights for our models. Due to some checkpoint files not being saved in time, we provide checkpoints whose performance is comparable to or even better than the results reported in the paper. All models were evaluated with 2 NVIDIA A100 GPUs, and can be reproduced with the evaluation script above.
 
 <table><tbody>
 <!-- START TABLE -->
@@ -187,6 +187,13 @@ We provide pretrained weights for our models. Due to some checkpoint files not b
 <th valign="bottom">DINO</th>
 <th valign="bottom">Download</th>
 <!-- TABLE BODY -->
+</tr>
+<!-- ROW: MM-OVSeg (B) -->
+<tr>
+<td align="left">MM-OVSeg (B)</a></td>
+<td align="center">ViT-B/16</td>
+<td align="center">DINO v1</td>
+<td align="center"><a href="https://huggingface.co/YiminJimmy/MM-OVSeg/blob/main/B16.zip">ckpt</a>&nbsp;
 </tr>
 <!-- ROW: MM-OVSeg (L) -->
 <tr>
