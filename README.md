@@ -209,11 +209,13 @@ We provide pretrained weights for our models. Due to some checkpoint files not b
 
 If this dataset or code contributes to your research, please kindly consider citing our paper and give this repo ⭐️:
 ```
-@article{wei2026mm,
-  title={{MM-OVS}eg: {M}ultimodal {O}ptical-{SAR} {F}usion for {O}pen-{V}ocabulary {S}egmentation in {R}emote {S}ensing},
-  author={Wei, Yimin and Xiao, Aoran and Chen, Hongruixuan and Xia, Junshi and Yokoya, Naoto},
-  journal={arXiv preprint arXiv:2603.17528},
-  year={2026}
+@InProceedings{Wei_2026_CVPR,
+    author    = {Wei, Yimin and Xiao, Aoran and Chen, Hongruixuan and Xia, Junshi and Yokoya, Naoto},
+    title     = {{MM-OVS}eg: {M}ultimodal {O}ptical-{SAR} {F}usion for {O}pen-{V}ocabulary {S}egmentation in {R}emote {S}ensing},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2026},
+    pages     = {42202-42212}
 }
 ```
 
