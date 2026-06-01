@@ -9,7 +9,7 @@
 
 <sup>*</sup> Equal contribution, <sup>†</sup> Corresponding author
 
-[![arXiv paper](https://img.shields.io/badge/arXiv-paper-b31b1b.svg)](https://arxiv.org/abs/2603.17528)  [![CVPR 2026 Paper](https://img.shields.io/badge/CVPR%202026-Paper-003f88.svg)](https://openaccess.thecvf.com/content/CVPR2026/papers/Wei_MM-OVSeg_Multimodal_Optical-SAR_Fusion_for_Open-Vocabulary_Segmentation_in_Remote_Sensing_CVPR_2026_paper.pdf)  [![HuggingFace Dataset](https://img.shields.io/badge/HuggingFace-Dataset-yellow)](https://huggingface.co/YiminJimmy/MM-OVSeg)
+[![arXiv Paper](https://img.shields.io/badge/arXiv-paper-b31b1b.svg)](https://arxiv.org/abs/2603.17528)  [![CVPR 2026 Paper](https://img.shields.io/badge/CVPR%202026-Paper-003f88.svg)](https://openaccess.thecvf.com/content/CVPR2026/papers/Wei_MM-OVSeg_Multimodal_Optical-SAR_Fusion_for_Open-Vocabulary_Segmentation_in_Remote_Sensing_CVPR_2026_paper.pdf)  [![HuggingFace Dataset](https://img.shields.io/badge/HuggingFace-Dataset-yellow)](https://huggingface.co/YiminJimmy/MM-OVSeg)
 
 
 </div>
